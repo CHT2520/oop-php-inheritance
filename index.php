@@ -140,9 +140,9 @@ Test this works by uncommenting the following code
 	// $projectManager->payContractors();
 
 	/*
-9. Add another child class of Contractor, name it Plumber. The work method should return a string such as 'plumber has fitted the sink'. Modify the above code so that a plumber is also added to the project. 
+9. Add another child class of Contractor, name it Plumber. The work() method should return a string such as 'plumber has fitted the sink'. Modify the above code so that a plumber is also added to the project. 
 
-Notice how we can  add a plumber and we don't have to make any changes to ProjectManager class. This is the advantage of polymorphism. 
+Notice how we can  add a plumber and we don't have to make any changes to ProjectManager class.
 */
 
 
