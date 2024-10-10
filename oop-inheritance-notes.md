@@ -29,7 +29,7 @@ class Animal {
          $this->name = $name;
     }
     public function sleep(){
-        return "{$this->name} is sleeping. Zzzzzzzzzzz";
+        return "{$this->name} is sleeping.";
     }
 
 }
@@ -44,7 +44,7 @@ class Cat extends Animal{
      //nothing in here
 }
 $myCat = new Cat("Mackeral");
-echo "<p>{$myCat->sleep()}</p>"; // Displays Mackeral is sleeping. Zzzzzzzzzzzzzz
+echo "<p>{$myCat->sleep()}</p>"; // Displays Mackeral is sleeping.
 ```
 
 - _Cat_ extends _Animal_.
@@ -56,12 +56,12 @@ echo "<p>{$myCat->sleep()}</p>"; // Displays Mackeral is sleeping. Zzzzzzzzzzzzz
 ```php
 class Cat extends Animal{
      public function scratch(){
-        return "{$this->name} scratched you";
+        return "{$this->name} scratched";
     }
 }
 $myCat = new Cat("Mackeral");
-echo "<p>{$myCat->sleep()}</p>"; // Displays Mackeral is sleeping. Zzzzzzzzzzzzzz
-echo "<p>{$myCat->scratch()}</p>"; // Displays Mackeral scratched you.
+echo "<p>{$myCat->sleep()}</p>"; // Displays Mackeral is sleeping.
+echo "<p>{$myCat->scratch()}</p>"; // Displays Mackeral scratched.
 ```
 
 ## Terminology
@@ -91,11 +91,11 @@ class Dog extends Animal
 $myAnimal = new Animal("Dave");
 echo "<p>{$myAnimal->sleep()</p>"; // Displays Dave is sleeping.
 $myCat = new Cat("Mackeral");
-echo "<p>{$myCat->sleep()}</p>"; // Displays Mackeral is sleeping. Zzzzzzzzzzzzzz
-echo "<p>{$myCat->scratch()}</p>"; // Displays Mackeral scratched you.
+echo "<p>{$myCat->sleep()}</p>"; // Displays Mackeral is sleeping.
+echo "<p>{$myCat->scratch()}</p>"; // Displays Mackeral scratched.
 
 $myDog = new Dog("Fido");
-echo "<p>{$myDog->sleep()}</p>"; // Displays Fido is sleeping. Zzzzzzzzzzzzzz
+echo "<p>{$myDog->sleep()}</p>"; // Displays Fido is sleeping.
 echo "<p>{$myDog->fetch("ball")}</p>"; // Displays Fido has picked up the ball.
 ```
 
@@ -111,7 +111,7 @@ abstract class Animal {
          $this->name=$name;
     }
     public function sleep(){
-        return "{$this->name} is sleeping. Zzzzzzzzzzz";
+        return "{$this->name} is sleeping.";
     }
     abstract public function talk();
 }
@@ -151,7 +151,7 @@ class Dog extends Animal{
 class Cat extends Animal {
     public function scratch()
     {
-        return "{$this->name} scratched you";
+        return "{$this->name} scratched";
     }
     public function talk() //we have to implement a talk method
     {
@@ -163,7 +163,7 @@ class Cat extends Animal {
 
 ```php
 $myCat = new Cat("Mackeral");
-echo "<p>{$myCat->scratch()}</p>"; // Displays Mackeral scratched you.
+echo "<p>{$myCat->scratch()}</p>"; // Displays Mackeral scratched.
 echo "<p>{$myCat->talk()}</p>"; // Mackeral says meow
 
 $myDog = new Dog("Fido");
