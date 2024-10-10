@@ -89,7 +89,7 @@ class Dog extends Animal
     }
 }
 $myAnimal = new Animal("Dave");
-echo "<p>{$myAnimal->sleep()</p>"; // Displays Dave is sleeping.
+echo "<p>{$myAnimal->sleep()}</p>"; // Displays Dave is sleeping.
 $myCat = new Cat("Mackeral");
 echo "<p>{$myCat->sleep()}</p>"; // Displays Mackeral is sleeping.
 echo "<p>{$myCat->scratch()}</p>"; // Displays Mackeral scratched.
